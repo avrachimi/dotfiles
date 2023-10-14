@@ -3,7 +3,7 @@ require('onedark').setup {
 }
 
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "carbonfox"
 	vim.cmd.colorscheme(color)
 end
 
