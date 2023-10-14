@@ -14,15 +14,15 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    --[[
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd("colorscheme rose-pine")
-        end
-    })
-    --]]
+
+    -- use({
+    --     'rose-pine/neovim',
+    --     as = 'rose-pine',
+    --     config = function()
+    --         vim.cmd("colorscheme rose-pine")
+    --     end
+    -- })
+    --
     ColorMyPencils()
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -54,9 +54,18 @@ return require('packer').startup(function(use)
     use('navarasu/onedark.nvim')
     use("EdenEast/nightfox.nvim")
 
+    -- My additions
     -- lualine
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
 end)
