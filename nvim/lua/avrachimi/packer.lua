@@ -14,6 +14,12 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    -- Telescope File Browser
+    use {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+
 
     -- use({
     --     'rose-pine/neovim',
@@ -23,7 +29,7 @@ return require('packer').startup(function(use)
     --     end
     -- })
     --
-    ColorMyPencils()
+    --    ColorMyPencils()
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
@@ -68,4 +74,12 @@ return require('packer').startup(function(use)
         end
     }
 
+    -- Auto closing pairs/tags
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+    use("windwp/nvim-ts-autotag")
+
+    use 'nvim-tree/nvim-web-devicons'
 end)
