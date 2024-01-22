@@ -5,6 +5,8 @@ require("conform").setup({
 		javascript = { { "prettierd", "prettier" } },
 		typescript = { { "prettierd", "prettier" } },
 		typescriptreact = { { "prettierd", "prettier" } },
+		-- Run multiple formatters sequentially
+		go = { "goimports", "gopls" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
