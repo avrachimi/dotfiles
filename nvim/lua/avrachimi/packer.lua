@@ -89,4 +89,7 @@ return require('packer').startup(function(use)
             require("conform").setup()
         end,
     })
+
+    -- tmux
+    use("christoomey/vim-tmux-navigator")
 end)
