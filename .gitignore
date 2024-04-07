@@ -5,3 +5,4 @@ iterm2/
 simple-update-notifier/
 github-copilot/
 stripe/
+nvim/plugin/packer_compiled.lua
