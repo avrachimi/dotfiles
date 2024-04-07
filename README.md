@@ -11,6 +11,7 @@
 - yabai and skhd
 
 ### To-do after installation
+- Change zshrc path ```ln -s ~/.config/.zshrc ~/.zshrc```
 - Setup ~/.zshrc
 - Install tmux plugins (```<prefix>I```)
 - Setup tmux-sessionizer
