@@ -13,6 +13,9 @@
 ### To-do after installation
 - Setup ~/.zshrc
 - Install tmux plugins (```<prefix>I```)
+- Setup tmux-sessionizer
+    - Install fzf ```brew install fzf```
+    - Copy bash script and modify ```selected``` directories
 - Install nvim plugins
     - Open nvim/lua/avrachimi/packer.lua
     - ```:so``` and ```:PackerSync```
