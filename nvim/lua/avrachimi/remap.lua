@@ -46,3 +46,6 @@ end)
 vim.keymap.set("i", "<C-d>", "<Plug>(copilot-dismiss)")
 vim.keymap.set("i", "<C-.>", "<Plug>(copilot-next)")
 vim.keymap.set("i", "<C-,>", "<Plug>(copilot-previous)")
+
+-- todo-comments remaps
+vim.keymap.set("n", "<leader>td", "<cmd>TodoTelescope<CR>")
