@@ -121,3 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH="$HOME/go"
 PATH="$GOPATH/bin:$PATH"
+
+# sst
+export PATH=/Users/avrachimi/.sst/bin:$PATH

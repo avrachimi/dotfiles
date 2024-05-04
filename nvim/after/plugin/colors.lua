@@ -1,11 +1,12 @@
 require('onedark').setup {
-    style = 'deep'
+    style = 'darker'
 }
+require('onedark').load()
 
 function ColorMyPencils(color)
 	color = color or "carbonfox"
 	vim.cmd.colorscheme(color)
 end
 
-ColorMyPencils("carbonfox")
+-- ColorMyPencils("duskfox")
 
