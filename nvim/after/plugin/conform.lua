@@ -7,6 +7,7 @@ require("conform").setup({
 		typescriptreact = { { "prettierd", "prettier" } },
 		-- Run multiple formatters sequentially
 		go = { "goimports", "gopls" },
+		rust = { "rustfmt" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
