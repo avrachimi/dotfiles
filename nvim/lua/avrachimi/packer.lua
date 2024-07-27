@@ -51,6 +51,7 @@ return require("packer").startup(function(use)
 			-- Autocompletion
 			{ "hrsh7th/nvim-cmp" }, -- Required
 			{ "hrsh7th/cmp-nvim-lsp" }, -- Required
+			{ "hrsh7th/cmp-nvim-lua" }, -- Required
 			{ "L3MON4D3/LuaSnip" }, -- Required
 		},
 	})
@@ -98,4 +99,7 @@ return require("packer").startup(function(use)
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	})
+
+	-- Rust
+	use("simrat39/rust-tools.nvim")
 end)

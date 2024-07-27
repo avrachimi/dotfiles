@@ -5,3 +5,4 @@ require('nvim-treesitter.configs').setup({
         enable_close_on_slash = false
     }
 })
+
