@@ -2,9 +2,9 @@ require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		-- Use a sub-list to run only the first available formatter
-		javascript = {  "prettierd", "prettier", stop_after_first = true },
-		typescript = {  "prettierd", "prettier", stop_after_first = true },
-		typescriptreact = {  "prettierd", "prettier", stop_after_first = true },
+		javascript = { "prettier", "prettierd", stop_after_first = true },
+		typescript = { "prettierd", "prettier", stop_after_first = true },
+		typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 		-- Run multiple formatters sequentially
 		go = { "goimports", "gopls" },
 		rust = { "rustfmt" },
@@ -16,7 +16,7 @@ require("conform").setup({
 	formatters = {
 		prettierd = {
 			env = {
-				PRETTIERD_DEFAULT_CONFIG = "~/.config/nvim/utils/linter-config/.prettierrc",
+				PRETTIERD_DEFAULT_CONFIG = ".prettierrc",
 			},
 		},
 	},
