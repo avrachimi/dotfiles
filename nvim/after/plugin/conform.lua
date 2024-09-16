@@ -2,9 +2,11 @@ require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		-- Use a sub-list to run only the first available formatter
-		javascript = { "prettier", "prettierd", stop_after_first = true },
-		typescript = { "prettier", "prettierd", stop_after_first = true },
-		typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+		javascript = { "prettierd", "prettier", stop_after_first = true },
+		typescript = { "prettierd", "prettier", stop_after_first = true },
+		-- running prettier first for React Native project
+		typescriptreact = { "prettier", "prettierd", stop_after_first = true },
+		javascriptreact = { "prettier", "prettierd", stop_after_first = true },
 		-- Run multiple formatters sequentially
 		go = { "goimports", "gopls" },
 		rust = { "rustfmt" },
