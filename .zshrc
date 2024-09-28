@@ -124,3 +124,8 @@ PATH="$GOPATH/bin:$PATH"
 
 # sst
 export PATH=/Users/avrachimi/.sst/bin:$PATH
+
+# Deno
+export DENO_INSTALL="/Users/avrachimi/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+

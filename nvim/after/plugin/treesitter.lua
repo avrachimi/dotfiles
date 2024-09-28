@@ -13,8 +13,10 @@ require("nvim-treesitter.configs").setup({
 		"gitcommit",
 		"go",
 		"json",
-        "rust",
-        "toml"
+		"rust",
+		"toml",
+		"markdown",
+		"markdown_inline",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)

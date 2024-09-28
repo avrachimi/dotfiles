@@ -103,4 +103,7 @@ return require("packer").startup(function(use)
 
 	-- Rust
 	use("simrat39/rust-tools.nvim")
+
+	-- For Deno
+	-- use({ "neoclide/coc.nvim", branch = "release" })
 end)
